@@ -3,7 +3,7 @@ body{
 }
 
 
-// _----------IDS___--------
+//----------IDS___--------
 
 #navBar{
   height: 44px;
@@ -16,7 +16,7 @@ body{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-  
+
 
     div{
       display: flex;
@@ -25,6 +25,18 @@ body{
       height: 100%;
       width: 95px;
       color: white;
+      cursor: pointer;
+      transition: 0.15s;
+
+      &:hover{
+        color: #959595;
+        transition: 0.15s;
+      }
+
+      span{
+        user-select: none;
+
+      }
     }
   }
 }
