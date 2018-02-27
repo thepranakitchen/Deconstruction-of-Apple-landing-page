@@ -14,6 +14,17 @@
     font-style: normal;
 }
 
+// PLACEHOLDERS
+
+%wrapperSize{
+  height: 70vh;
+  width: 100vw;
+  padding: 55px 0 0 0;
+  margin: 0 0 5px 0;
+  line-height: 1.35;
+  box-sizing: border-box;
+}
+
 
 
 body{
@@ -78,16 +89,19 @@ body{
   background-image: url('imgs/iphone_8_large.jpg');
 }
 
+#feature1{
+  background-image: url('imgs/arkit_large.jpg');
+}
+
+#feature2{
+  background-image: url('imgs/imac_pro_large.jpg');
+}
+
 
 //     =========CLASSES========
 
 .heroWrapper{
-  height: 70vh;
-  width: 100vw;
-  padding: 55px 0 0 0;
-  margin: 0 0 5px 0;
-  line-height: 1.35;
-  box-sizing: border-box;
+  @extend %wrapperSize;
   background-color: #F9F9F9;
 
   div{
@@ -97,6 +111,28 @@ body{
 
     background: {
       size: contain;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
+}
+
+.featureWrapper {
+  @extend %wrapperSize;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+
+  div{
+    width: 49vw;
+    height: 100%;
+    background-color: #ccc;
+    padding: 33px 0 0 0;
+    box-sizing: border-box;
+    color: white;
+
+    background: {
+      size: cover;
       position: center;
       repeat: no-repeat;
     }
