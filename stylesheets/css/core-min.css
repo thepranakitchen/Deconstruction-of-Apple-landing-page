@@ -39,3 +39,42 @@ body {
         font-size: .85em;
         letter-spacing: .03em;
         user-select: none; }
+
+#hero3 {
+  background-color: #F8EEE8; }
+
+#hero1Img {
+  background-image: url("imgs/iphone_x.jpg"); }
+
+#hero2Img {
+  background-image: url("imgs/homepod_large.jpg"); }
+
+#hero3Img {
+  background-image: url("imgs/iphone_8_large.jpg"); }
+
+.heroWrapper {
+  height: 70vh;
+  width: 100vw;
+  padding: 55px 0 0 0;
+  margin: 0 0 5px 0;
+  line-height: 1.35;
+  box-sizing: border-box;
+  background-color: #F9F9F9; }
+  .heroWrapper div {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto 0 auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+h1 {
+  font-size: 3.4em;
+  letter-spacing: -.05em;
+  font-weight: 600;
+  text-align: center; }
+
+h2 {
+  font-size: 1.55em;
+  letter-spacing: -.01em;
+  text-align: center; }
